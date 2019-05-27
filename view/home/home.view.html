@@ -1,0 +1,49 @@
+<Layout class="skin-smart-ui skin-layout">
+    <Header class="skin-layout-header">
+        <Menu mode="horizontal" theme="dark" :active-name="active" @on-select="handlerMenuChange">
+            <MenuItem name="Home">
+                <Icon type="ios-paper" />
+                主页
+            </MenuItem>
+            <MenuItem name="2">
+                <Icon type="ios-people" />
+                用户管理
+            </MenuItem>
+            <Submenu name="3">
+                <template slot="title">
+                    <Icon type="ios-stats" />
+                    统计分析
+                </template>
+                <MenuGroup title="使用">
+                    <MenuItem name="3-1">新增和启动</MenuItem>
+                    <MenuItem name="3-2">活跃分析</MenuItem>
+                    <MenuItem name="3-3">时段分析</MenuItem>
+                </MenuGroup>
+                <MenuGroup title="留存">
+                    <MenuItem name="3-4">用户留存</MenuItem>
+                    <MenuItem name="3-5">流失用户</MenuItem>
+                </MenuGroup>
+            </Submenu>
+            <MenuItem name="4">
+                <Icon type="ios-construct" />
+                综合设置
+            </MenuItem>
+        </Menu>
+    </Header>
+    <Content class="skin-layout-content">
+        <router-view></router-view>
+    </Content>
+    <Footer class="skin-layout-footer">
+        <!-- <div class="skin-layout-footer-icons">
+            <Icon :type="active === 'Home' ? 'ios-home' : 'ios-home-outline'" :class="{'active' : active === 'Home'}" @click="handlerMenuChange('Home')" />
+            <Icon :type="active === 'Work' ? 'ios-apps' : 'ios-apps-outline'" :class="{'active' : active === 'Work'}" @click="handlerMenuChange('Work')"/>
+            <Icon :type="active === 'Message' ? 'ios-chatbubbles' : 'ios-chatbubbles-outline'" :class="{'active' : active === 'Message'}" @click="handlerMenuChange('Message')"/>
+            <Icon :type="active === 'Me' ? 'ios-person' : 'ios-person-outline'" :class="{'active' : active === 'Me'}" @click="handlerMenuChange('Me')"/>
+        </div> -->
+        <Row>
+            <Col span="6">&nbsp;</Col>
+            <Col span="12" style="text-align:center;">Copyright © 2018 Test Systems Incorporated. All rights reserved.</Col>
+            <Col span="6">&nbsp;</Col>
+        </Row>
+    </Footer>
+</Layout>

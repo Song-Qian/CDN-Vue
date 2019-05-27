@@ -1,0 +1,6 @@
+@media screen and (device-aspect-ratio:16/9) {
+    .skin-media-items > .skin-media-item {
+        width: 50%;
+    }
+
+}

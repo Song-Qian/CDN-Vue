@@ -1,0 +1,101 @@
+@media screen and (device-aspect-ratio:4/3) {
+    .skin-media-items > .skin-media-item {
+        width: 100%;
+    }
+    
+}
+
+.skin-media-body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.skin-media-items {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.skin-media-items > .skin-media-item {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    background-color: #f8f8f9;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.skin-media-items[class*='item-'] > .skin-media-item {
+    transition: transform 1s;
+}
+.skin-media-items.item-1.up > .skin-media-item,
+.skin-media-items.item-1.down > .skin-media-item {
+    transform: translateY(-100%);
+}
+.skin-media-items.item-2.up > .skin-media-item,
+.skin-media-items.item-2.down > .skin-media-item {
+    transform: translateY(-200%);
+}
+.skin-media-items.item-3.up > .skin-media-item,
+.skin-media-items.item-3.down > .skin-media-item {
+    transform: translateY(-300%);
+}
+.skin-media-items.item-4.up > .skin-media-item,
+.skin-media-items.item-4.down > .skin-media-item {
+    transform: translateY(-400%);
+}
+.skin-media-items.item-5.up > .skin-media-item,
+.skin-media-items.item-5.down > .skin-media-item {
+    transform: translateY(-500%);
+}
+.skin-media-items.item-6.up > .skin-media-item,
+.skin-media-items.item-6.down > .skin-media-item {
+    transform: translateY(-600%);
+}
+.skin-media-items.item-7.up > .skin-media-item,
+.skin-media-items.item-7.down > .skin-media-item {
+    transform: translateY(-700%);
+}
+.skin-media-items.item-8.up > .skin-media-item,
+.skin-media-items.item-8.down > .skin-media-item {
+    transform: translateY(-800%);
+}
+.skin-media-items.item-9.up > .skin-media-item,
+.skin-media-items.item-9.down > .skin-media-item {
+    transform: translateY(-900%);
+}
+.skin-media-items.item-10.up > .skin-media-item,
+.skin-media-items.item-10.down > .skin-media-item {
+    transform: translateY(-1000%);
+}
+
+.skin-media-items > .skin-media-avatar {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    display: flex;
+    width: 30px;
+    z-index: 999;
+    flex-flow: column nowrap;
+    transform: translateY(-50%);
+}
+
+.skin-media-items > .skin-media-avatar > .skin-media-avatar-circle {
+    flex: 0 0 20px;
+    margin:5px;
+    box-sizing: border-box;
+    border:1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.skin-media-items > .skin-media-avatar > .skin-media-avatar-circle.active {
+    background-color: #fff;
+    transition: background 1s;
+}

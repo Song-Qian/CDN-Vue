@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.1",
+  "description": "智慧运维项目app静态页源码,CDN模式的SPA解决方案",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot --port 8001 --host localhost"
+  },
+  "author": "SongQian",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {}
+}

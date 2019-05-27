@@ -1,0 +1,150 @@
+@import url(./fonts/sansfont.css);
+
+html, body {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+	font-size: 14px;
+}
+
+.skin-body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.skin-smart-ui.skin-layout {
+    width: 100%;
+    height: 100%;
+}
+
+.skin-smart-ui.skin-layout > .skin-layout-header {
+    color: #fff;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.skin-smart-ui.skin-layout > .skin-layout-content {
+    background: #f8f8f9;
+    flex: 1;
+}
+
+.skin-smart-ui.skin-layout > .skin-layout-footer {
+    padding: 0;
+    background: #f8f8f9;
+    height: 60px;
+    border-top: 1px solid #e8eaec;
+}
+
+.skin-smart-ui.skin-layout > .skin-layout-footer > .skin-layout-footer-icons {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.skin-smart-ui.skin-layout > .skin-layout-footer > .skin-layout-footer-icons > i {
+    font-size: 32px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.skin-smart-ui.skin-layout > .skin-layout-footer > .skin-layout-footer-icons > i.active,
+.skin-smart-ui.skin-layout > .skin-layout-footer > .skin-layout-footer-icons > i:hover {
+    color : #2b85e4;
+}
+
+.skin-smart-ui.skin-smart-img {
+    border:0px solid #dcdee2;
+    border-radius: 5px;
+    text-align: center;
+    color: #808695;
+    font-family: Ionicons;
+    background-color: #c5c8ce;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.skin-smart-ui.skin-smart-img:after {
+    content: '\F1FC';
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding:0;
+    transform: translateY(-100%);
+    background-color: #c5c8ce;
+}
+
+/* 工具类样式表，通用。 */
+.skin-smart-ui.skin-text-info {
+    color : #2db7f5;
+}
+.skin-smart-ui.skin-text-primary {
+    color : #2d8cf0;
+}
+.skin-smart-ui.skin-text-success {
+    color : #19be6b;
+}
+.skin-smart-ui.skin-text-warning {
+    color : #ff9900;
+}
+.skin-smart-ui.skin-text-error {
+    color : #ed4014;
+}
+.skin-smart-ui.skin-text-normal {
+    color : #515a6e;
+}
+
+.skin-smart-ui.skin-info {
+    background-color: #2db7f5;
+    color: #fff;
+}
+.skin-smart-ui.skin-primary {
+    background-color: #2d8cf0;
+    color: #fff;
+}
+.skin-smart-ui.skin-success {
+    background-color: #19be6b;
+    color: #fff;
+}
+.skin-smart-ui.skin-warning {
+    background-color: #ff9900;
+    color: #fff;
+}
+.skin-smart-ui.skin-error {
+    background-color: #ed4014;
+    color: #fff;
+}
+.skin-smart-ui.skin-normal {
+    background-color: #515a6e;
+    color: #fff;
+}
+
+.skin-smart-ui.skin-radius-circle {
+    border-radius: 50%;
+}
+
+.skin-smart-ui.skin-text-size-noraml {
+    font-size: 14px;
+}
+
+.skin-smart-ui.skin-text-size-1x {
+    font-size: 1em;
+}
+
+.skin-smart-ui.skin-text-size-2x {
+    font-size: 2em;
+}
+.skin-smart-ui.skin-text-size-3x {
+    font-size: 3em;
+}
+.skin-smart-ui.skin-text-size-4x {
+    font-size: 4em;
+}
+.skin-smart-ui.skin-text-size-5x {
+    font-size: 5em;
+}

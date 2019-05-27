@@ -1,0 +1,8 @@
+<div class="skin-media-body">
+    <div class="skin-media-items" :class="getScrollAnimation" :style="{ 'transfrom' : getScrollTo, 'transition' : 'transfrom 1s'}" @wheel="scroll">
+        <div class="skin-media-item" v-for="(item, key) in items" :key="key" :style="{ backgroundImage: 'url('+ item +')' }"></div>
+        <div class="skin-media-avatar">
+            <i class="skin-media-avatar-circle" v-for="n in getScrollPageSize" :class="{ 'active' : n === (active + 1) }" :key="n">{{n}}</i>
+        </div>
+    </div>
+</div>
