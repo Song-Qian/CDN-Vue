@@ -24,7 +24,7 @@ define([
         constructor : Modules,
         init : function() {
             for(let namespace in this.namespaces){
-                this.modules[this.namespaces[namespace]] = this.modules[this.namespaces[namespace]] || {};
+                this.modules[this.namespaces[namespace]] = this.packages[namespace][this.namespaces[namespace]]() || {};
                 // Object.assign(this.modules[this.namespaces[namespace]], this.packages[namespace][this.namespaces[namespace]]());
             }
         },

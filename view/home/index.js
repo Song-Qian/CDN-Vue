@@ -18,25 +18,25 @@ define([
                 count : 0
             }
         },
-        computed : Object.assign({
-        }, vuex.mapGetters({
+        computed : Object.assign({ }, vuex.mapGetters({
             'getImageTopLeft' : 'Sys/getImageTopLeft',
             'getImageTopRight' : 'Sys/getImageTopRight',
             'getImageBottomLeft' : 'Sys/getImageBottomLeft',
             'getImageBottomRight' : 'Sys/getImageBottomRight'
-        })),
+          })
+        ),
         mounted : function() {
-            var me = this;
-            var timer = setInterval(function() {
-                me.$nextTick(function() {
-                    me.count++;
-                    console.log(me.count);
-                })
-            }, 1);
+            // var me = this;
+            // var timer = setInterval(function() {
+            //     me.$nextTick(function() {
+            //         me.count++;
+            //         console.log(me.count);
+            //     })
+            // }, 1);
 
-            me.$once("hook:beforeDestroy", function() {
-                clearInterval(timer);
-            })
+            // me.$once("hook:beforeDestroy", function() {
+            //     clearInterval(timer);
+            // })
         }
     });
     return component;
